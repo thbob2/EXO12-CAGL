@@ -12,13 +12,13 @@ public class StudentBean implements Student {
     private DataSource datasource;
 
     @Override
-    public boolean  add(String name,String lastName, int nbRegistration){
+    public boolean add(String name,String lastName, int nbRegistration){
         try {
             connection = datasource.getConnection();
-            System.out.println("congrats you've been connected to the Oracle");
+
             Statement query = connection.createStatement();
             query.executeUpdate("insert into etudiants(mat, nom, prenom) values("+nbRegistration+",'"+name+"',"+lastName+"');");
-            System.out.println("row inserted successfully");
+
             connection.close();
             return true;
         } catch (Exception e) {
@@ -26,8 +26,36 @@ public class StudentBean implements Student {
             es.save(e);
             return false;
         }
+
+    }
+    @Override
+    public boolean pop(int nbRegistration){
+        try {
+            connection = datasource.getConnection();
+            Statement query = connection.createStatement();
+            return query.execute("DELETE FROM etudiants where mat="+nbRegistration+";");
+        } catch (Exception e) {
+            ExceptionSaver es = new ExceptionSaver();
+            es.save(e);
+            return false;
+        }
     }
 
+    @Override
+    public void print(int nbRegistration){
+        try {
+            connection = datasource.getConnection();
+            Statement query = connection.createStatement();
+            ResultSet result = query.executeQuery("select * from etudiants where mat="+nbRegistration+";");
+            while(result.next()){
+                System.out.println(result.getString(1)+" "+result.getString(2)+" "+result.getString(3));
+            }
+            
+        } catch (Exception e) {
+            ExceptionSaver es = new ExceptionSaver();
+            es.save(e);
+        }
+    }
 
     
 }
