@@ -1,0 +1,16 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/home/boe/Documents/ojdbc8-full/OJDBC8-Full/ojdbc8.jar",
+        "/home/boe/Documents/ojdbc8-full/OJDBC8-Full/ons.jar",
+        "/home/boe/Documents/ojdbc8-full/OJDBC8-Full/oraclepki.jar",
+        "/home/boe/Documents/ojdbc8-full/OJDBC8-Full/orai18n.jar",
+        "/home/boe/Documents/ojdbc8-full/OJDBC8-Full/osdt_cert.jar",
+        "/home/boe/Documents/ojdbc8-full/OJDBC8-Full/osdt_core.jar",
+        "/home/boe/Documents/ojdbc8-full/OJDBC8-Full/simplefan.jar",
+        "/home/boe/Documents/ojdbc8-full/OJDBC8-Full/ucp.jar",
+        "/home/boe/Documents/ojdbc8-full/OJDBC8-Full/xdb6.jar",
+        "/home/boe/Documents/jar_files/ejb-api-3.0.jar"
+    ],
+    "git.ignoreLimitWarning": true
+}

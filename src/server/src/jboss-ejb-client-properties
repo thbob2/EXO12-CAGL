@@ -1,0 +1,6 @@
+remote.connection=default
+remote.connection.default.host=127.0.0.1
+remote.connection.default.port=8080
+remote.connectionprovider.create.option.org.xnio.Options.SSL_ENABLED=false
+remote.connection.default.connect.option.org.xnio.Options.SASL_POLICY_NOANONYMOUS=false
+java.naming.factory.initial=org.jboss.naming.remote.client.InitialContextFactory
