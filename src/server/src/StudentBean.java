@@ -2,6 +2,7 @@ import javax.annotation.*;
 import java.sql.*;
 import javax.ejb.Stateful;
 import javax.sql.DataSource;
+import ExceptionSaver;
 
 @Stateful
 public class StudentBean implements Student {
@@ -21,6 +22,8 @@ public class StudentBean implements Student {
             connection.close();
             return true;
         } catch (Exception e) {
+            ExceptionSaver es = new ExceptionSaver();
+            es.save(e);
             return false;
         }
     }
