@@ -26,6 +26,7 @@ public class Client {
 
     }
     public void communicate(){
+        System.out.println("brace yourself ...");
         while(!isConnected){
             
             try {

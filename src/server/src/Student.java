@@ -1,3 +1,5 @@
+package server.src;
+
 import javax.ejb.*;
 /**
  ** three methodes are implemented in the interface
