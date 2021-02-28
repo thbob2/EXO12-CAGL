@@ -20,8 +20,8 @@ public class Client {
         System.out.println("|***********************************MENU************************************|");
         System.out.println("|_____________________________Choose number_________________________________|");
         System.out.println("| (1)       print student                                                   |");
-        System.out.println("| (2)       add a student                                               |");
-        System.out.println("| (3)       destroy a new student                                               |");
+        System.out.println("| (2)       add a student                                                   |");
+        System.out.println("| (3)       destroy a new student                                           |");
         System.out.println("|________________________________(0) Exit___________________________________|");
 
     }

@@ -55,7 +55,7 @@ public class ExceptionSaver implements Serializable {
     }
 
     ArrayList<PException> logEx;
-    private final String textFname = System.getProperty("user.dir") + "/ExcetpionsLog.txt";
+    private final String textFname = System.getProperty("user.dir") + "/logs.txt";
     private final String serFname = System.getProperty("user.dir") + "/ExceptionsLogser.ser";
     private final String xmlFname = System.getProperty("user.dir") +"/ExceoptionsLog.xml";
     public ExceptionSaver() {
